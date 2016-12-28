@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9656D4971E13694F0044CBF2 /* WaterFLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9656D4961E13694F0044CBF2 /* WaterFLayout.m */; };
 		966EC3071E11FA44002E5952 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC3061E11FA44002E5952 /* main.m */; };
 		966EC30A1E11FA44002E5952 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC3091E11FA44002E5952 /* AppDelegate.m */; };
-		966EC30D1E11FA44002E5952 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC30C1E11FA44002E5952 /* ViewController.m */; };
+		966EC30D1E11FA44002E5952 /* SearchTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC30C1E11FA44002E5952 /* SearchTypeViewController.m */; };
 		966EC3101E11FA44002E5952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966EC30E1E11FA44002E5952 /* Main.storyboard */; };
 		966EC3121E11FA44002E5952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966EC3111E11FA44002E5952 /* Assets.xcassets */; };
 		966EC3151E11FA44002E5952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966EC3131E11FA44002E5952 /* LaunchScreen.storyboard */; };
 		966EC3201E11FA44002E5952 /* searchViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC31F1E11FA44002E5952 /* searchViewTests.m */; };
 		966EC32B1E11FA44002E5952 /* searchViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC32A1E11FA44002E5952 /* searchViewUITests.m */; };
-		966EC3491E11FC4E002E5952 /* CFSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC33A1E11FC4E002E5952 /* CFSearchView.m */; };
 		966EC34A1E11FC4E002E5952 /* PYSearch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 966EC33B1E11FC4E002E5952 /* PYSearch.bundle */; };
 		966EC34B1E11FC4E002E5952 /* PYSearchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC33E1E11FC4E002E5952 /* PYSearchConst.m */; };
 		966EC34C1E11FC4E002E5952 /* PYSearchSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC3401E11FC4E002E5952 /* PYSearchSuggestionViewController.m */; };
@@ -49,12 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9656D4951E13694F0044CBF2 /* WaterFLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFLayout.h; sourceTree = "<group>"; };
+		9656D4961E13694F0044CBF2 /* WaterFLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFLayout.m; sourceTree = "<group>"; };
 		966EC3021E11FA44002E5952 /* searchView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966EC3061E11FA44002E5952 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		966EC3081E11FA44002E5952 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		966EC3091E11FA44002E5952 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		966EC30B1E11FA44002E5952 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		966EC30C1E11FA44002E5952 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		966EC30B1E11FA44002E5952 /* SearchTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTypeViewController.h; sourceTree = "<group>"; };
+		966EC30C1E11FA44002E5952 /* SearchTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTypeViewController.m; sourceTree = "<group>"; };
 		966EC30F1E11FA44002E5952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		966EC3111E11FA44002E5952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		966EC3141E11FA44002E5952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,8 +67,6 @@
 		966EC3261E11FA44002E5952 /* searchViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = searchViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		966EC32A1E11FA44002E5952 /* searchViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = searchViewUITests.m; sourceTree = "<group>"; };
 		966EC32C1E11FA44002E5952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		966EC3391E11FC4E002E5952 /* CFSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSearchView.h; sourceTree = "<group>"; };
-		966EC33A1E11FC4E002E5952 /* CFSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSearchView.m; sourceTree = "<group>"; };
 		966EC33B1E11FC4E002E5952 /* PYSearch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PYSearch.bundle; sourceTree = "<group>"; };
 		966EC33C1E11FC4E002E5952 /* PYSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearch.h; sourceTree = "<group>"; };
 		966EC33D1E11FC4E002E5952 /* PYSearchConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchConst.h; sourceTree = "<group>"; };
@@ -139,10 +139,12 @@
 			children = (
 				966EC3081E11FA44002E5952 /* AppDelegate.h */,
 				966EC3091E11FA44002E5952 /* AppDelegate.m */,
-				966EC30B1E11FA44002E5952 /* ViewController.h */,
-				966EC30C1E11FA44002E5952 /* ViewController.m */,
+				966EC30B1E11FA44002E5952 /* SearchTypeViewController.h */,
+				966EC30C1E11FA44002E5952 /* SearchTypeViewController.m */,
 				966EC3381E11FC4E002E5952 /* PYSearch */,
 				966EC30E1E11FA44002E5952 /* Main.storyboard */,
+				9656D4951E13694F0044CBF2 /* WaterFLayout.h */,
+				9656D4961E13694F0044CBF2 /* WaterFLayout.m */,
 				966EC3111E11FA44002E5952 /* Assets.xcassets */,
 				966EC3131E11FA44002E5952 /* LaunchScreen.storyboard */,
 				966EC3161E11FA44002E5952 /* Info.plist */,
@@ -180,8 +182,6 @@
 		966EC3381E11FC4E002E5952 /* PYSearch */ = {
 			isa = PBXGroup;
 			children = (
-				966EC3391E11FC4E002E5952 /* CFSearchView.h */,
-				966EC33A1E11FC4E002E5952 /* CFSearchView.m */,
 				966EC3511E1259D4002E5952 /* icon_lishi@2x.png */,
 				966EC3521E1259D4002E5952 /* icon_lishi@3x.png */,
 				966EC3531E1259D4002E5952 /* icon_remen@2x.png */,
@@ -350,14 +350,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				966EC34B1E11FC4E002E5952 /* PYSearchConst.m in Sources */,
-				966EC30D1E11FA44002E5952 /* ViewController.m in Sources */,
+				966EC30D1E11FA44002E5952 /* SearchTypeViewController.m in Sources */,
 				966EC30A1E11FA44002E5952 /* AppDelegate.m in Sources */,
 				966EC34F1E11FC4E002E5952 /* UIColor+PYSearchExtension.m in Sources */,
 				966EC34D1E11FC4E002E5952 /* PYSearchViewController.m in Sources */,
 				966EC3501E11FC4E002E5952 /* UIView+PYSearchExtension.m in Sources */,
 				966EC3071E11FA44002E5952 /* main.m in Sources */,
-				966EC3491E11FC4E002E5952 /* CFSearchView.m in Sources */,
 				966EC34C1E11FC4E002E5952 /* PYSearchSuggestionViewController.m in Sources */,
+				9656D4971E13694F0044CBF2 /* WaterFLayout.m in Sources */,
 				966EC34E1E11FC4E002E5952 /* PYTempViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +596,7 @@
 				966EC3311E11FA44002E5952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		966EC3321E11FA44002E5952 /* Build configuration list for PBXNativeTarget "searchViewTests" */ = {
 			isa = XCConfigurationList;
@@ -604,6 +605,7 @@
 				966EC3341E11FA44002E5952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		966EC3351E11FA44002E5952 /* Build configuration list for PBXNativeTarget "searchViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -612,6 +614,7 @@
 				966EC3371E11FA44002E5952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

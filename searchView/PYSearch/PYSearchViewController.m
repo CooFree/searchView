@@ -97,7 +97,7 @@
 {
     if (!_baseSearchTableView) {
         UITableView *baseSearchTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.py_width, self.view.py_height-64) style:UITableViewStyleGrouped];
-        baseSearchTableView.backgroundColor = [UIColor clearColor];
+        baseSearchTableView.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.9];
         baseSearchTableView.delegate = self;
         baseSearchTableView.dataSource = self;
         baseSearchTableView.keyboardDismissMode=UIScrollViewKeyboardDismissModeOnDrag;
@@ -270,7 +270,7 @@
 - (void)setup
 {
     // 设置背景颜色为白色
-    self.view.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.8];
+//    self.view.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.8];
 //    self.view.backgroundColor = [UIColor whiteColor];
 
     

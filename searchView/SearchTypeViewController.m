@@ -96,6 +96,8 @@ static NSString *headerID = @"headerID";
     [self.view addSubview:self.searchBar];
     
     [self.view addSubview:self.collectionView];
+    
+    self.searchController.hotSearches=@[@"1234",@"5678"];
 }
 
 #pragma mark - UISearchBarDelegate

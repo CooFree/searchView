@@ -885,6 +885,20 @@
 /** 点击清空历史按钮 */
 - (void)emptySearchHistoryDidClick
 {
+//    TFPopBackgroundView *popView = [[TFPopBackgroundView alloc] initWithTitle:@"温馨提示" message:[NSString stringWithFormat:@"缓存文件大小为%.1fM,确定要清理吗?",[self folderSizeAtPath:[NSSearchPathForDirectoriesInDomains(NSCachesDirectory,NSUserDomainMask, YES) objectAtIndex:0]]] showCancelBtn:NO leftBtnText:@"取消" rightBtnText:@"确定"];
+//    [popView setCancelBlock:^{
+//        
+//    } withConfirmBlock:^{
+    [self emptySearchHistory];
+//    } withNoOperationBlock:^{
+//        
+//    }];
+//    
+//    [popView show];
+    
+}
+- (void)emptySearchHistory {
+    
     // 移除所有历史搜索
     [self.searchHistories removeAllObjects];
     // 移除数据缓存

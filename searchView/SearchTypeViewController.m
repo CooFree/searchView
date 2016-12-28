@@ -52,7 +52,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        _imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width-20, frame.size.height-20)];
+        _imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height-20)];
         _imageV.contentMode=UIViewContentModeScaleAspectFit;
         _imageV.backgroundColor=[UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
 
@@ -212,7 +212,7 @@ static NSString *headerID = @"headerID";
 #pragma mark item 大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat imgH = 80;
+    CGFloat imgH = 90;
     CGFloat imgW = 70;
     
     CGFloat W = (self.view.frame.size.width-18)/2.0;

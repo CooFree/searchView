@@ -9,6 +9,7 @@
 #import "SearchTypeViewController.h"
 #import "PYSearchViewController.h"
 #import "WaterFLayout.h"
+#import "CFWaterFLayout.h"
 
 #define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -26,10 +27,11 @@
 -(instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor groupTableViewBackgroundColor];
         
         _nameLabel = [[UILabel alloc]init];
-        _nameLabel.frame = CGRectMake(0, 5, SCREEN_WIDTH, 45);
+        _nameLabel.backgroundColor=[UIColor whiteColor];
+        _nameLabel.frame = CGRectMake(0, 10, SCREEN_WIDTH, 45);
 //        _nameLabel.font = [UIFont systemFontOfSize:ZOOM(50)];
 //        _nameLabel.textColor=
         _nameLabel.textAlignment=NSTextAlignmentCenter;
@@ -52,14 +54,14 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        _imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height-20)];
+        _imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height-40)];
         _imageV.contentMode=UIViewContentModeScaleAspectFit;
         _imageV.backgroundColor=[UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
 
 //        imageV.layer.masksToBounds = YES;
 //        imageV.layer.cornerRadius = ZOOM6(70)*0.5;
         [self.contentView addSubview:_imageV];
-        _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, frame.size.height-20, frame.size.width, 20)];
+        _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, frame.size.height-40, frame.size.width, 40)];
         _nameLabel.textAlignment=NSTextAlignmentCenter;
 //        _nameLabel.font
 //        _nameLabel.textColor=
@@ -208,13 +210,13 @@ static NSString *headerID = @"headerID";
 //    {
 //        return  60;
 //    }
-    return  50;
+    return  55;
 }
 #pragma mark - UICollectionViewDelegateFlowLayout
 #pragma mark item 大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat imgH = 90;
+    CGFloat imgH = 110;
     CGFloat imgW = 70;
     
     CGFloat W = (self.view.frame.size.width-18)/2.0;
@@ -251,7 +253,8 @@ static NSString *headerID = @"headerID";
 
 - (UICollectionView *)collectionView {
     if (nil == _collectionView) {
-        WaterFLayout *flowLayout=[[WaterFLayout alloc]init];
+        CFWaterFLayout *flowLayout=[[CFWaterFLayout alloc]init];
+        flowLayout.naviHeight=0;
         flowLayout.sectionInset = UIEdgeInsetsMake(0, 5, 0, 5);
         flowLayout.minimumColumnSpacing=15;
         flowLayout.minimumInteritemSpacing=5;

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9656D4971E13694F0044CBF2 /* WaterFLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9656D4961E13694F0044CBF2 /* WaterFLayout.m */; };
+		9656D4C01E15119C0044CBF2 /* CFWaterFLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9656D4BF1E15119C0044CBF2 /* CFWaterFLayout.m */; };
 		966EC3071E11FA44002E5952 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC3061E11FA44002E5952 /* main.m */; };
 		966EC30A1E11FA44002E5952 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC3091E11FA44002E5952 /* AppDelegate.m */; };
 		966EC30D1E11FA44002E5952 /* SearchTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EC30C1E11FA44002E5952 /* SearchTypeViewController.m */; };
@@ -51,6 +52,8 @@
 /* Begin PBXFileReference section */
 		9656D4951E13694F0044CBF2 /* WaterFLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFLayout.h; sourceTree = "<group>"; };
 		9656D4961E13694F0044CBF2 /* WaterFLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFLayout.m; sourceTree = "<group>"; };
+		9656D4BE1E15119C0044CBF2 /* CFWaterFLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFWaterFLayout.h; sourceTree = "<group>"; };
+		9656D4BF1E15119C0044CBF2 /* CFWaterFLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFWaterFLayout.m; sourceTree = "<group>"; };
 		966EC3021E11FA44002E5952 /* searchView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966EC3061E11FA44002E5952 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		966EC3081E11FA44002E5952 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				966EC30E1E11FA44002E5952 /* Main.storyboard */,
 				9656D4951E13694F0044CBF2 /* WaterFLayout.h */,
 				9656D4961E13694F0044CBF2 /* WaterFLayout.m */,
+				9656D4BE1E15119C0044CBF2 /* CFWaterFLayout.h */,
+				9656D4BF1E15119C0044CBF2 /* CFWaterFLayout.m */,
 				966EC3111E11FA44002E5952 /* Assets.xcassets */,
 				966EC3131E11FA44002E5952 /* LaunchScreen.storyboard */,
 				966EC3161E11FA44002E5952 /* Info.plist */,
@@ -357,6 +362,7 @@
 				966EC3501E11FC4E002E5952 /* UIView+PYSearchExtension.m in Sources */,
 				966EC3071E11FA44002E5952 /* main.m in Sources */,
 				966EC34C1E11FC4E002E5952 /* PYSearchSuggestionViewController.m in Sources */,
+				9656D4C01E15119C0044CBF2 /* CFWaterFLayout.m in Sources */,
 				9656D4971E13694F0044CBF2 /* WaterFLayout.m in Sources */,
 				966EC34E1E11FC4E002E5952 /* PYTempViewController.m in Sources */,
 			);
